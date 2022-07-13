@@ -16,33 +16,33 @@
     </div>
     <name class="name">
       <h1 class="headTitle">Hilary Kang Oglesby</h1>
-      <p style="margin-left: 5vw; margin-right: 5vw; color: #737677; font-family: Arial, Helvetica, sans-serif;">I am a rising senior at Occidental College, with a double major in Theater and Computer Science and a minor in Mathematics! On top of classes, I participate in the cast and crew of mainstage productions, am a member of the Oxy Glee Club, and study vocal performance. I love that I get to spend my day studying multiple things I am passionate about.
+      <p class="paragraphs">I am a rising senior at Occidental College, with a double major in Theater and Computer Science and a minor in Mathematics! On top of classes, I participate in the cast and crew of mainstage productions, am a member of the Oxy Glee Club, and study vocal performance. I love that I get to spend my day studying multiple things I am passionate about.
 
 In addition to being a student, I am entering my third summer as a software engineering intern with Autonomic LLC. My first summer I worked on the User Interface team, and then moved to the Customer Support team.
 
 My absolute favorite thing to do in my free time is to practice singing, but I also love to explore nature through hiking, learn how to cook new recipes, and read. To learn more about me and my adventures, check out the pictures below!</p>
     </name>
     <div class="gallery">
-        <div class="box" onmouseover="hover('mob', 'mobText')" onmouseout="offHover('mob', 'mobText')">
+        <div class="box" onClick="openPage('theaterAtOxy')" onmouseover="hover('mob', 'mobText')" onmouseout="offHover('mob', 'mobText')">
             <img src="images/mob.jpg" id="mob" alt="Girl carrying boat" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
             <div class="photo_text" id="mobText" style="left: 8%;">  
                 <div class="text">Theater Productions at Oxy</div>
             </div>  
         </div>
-        <div class="box" onmouseover="hover('au', 'auText')" onmouseout="offHover('au', 'auText')">
+        <div class="box" onclick="window.open('interningAtAu');" onmouseover="hover('au', 'auText')" onmouseout="offHover('au', 'auText')">
             <img src="images/autonomic.jpg" alt="Girl in front of computer" id="au" class="image" style="width: 100%; height: 100%; display: block;  transition: 0.5sease; opacity: 1;">
             <div class="photo_text" id="auText" style="left: 16%;">  
                 <div class="text">Interning at Autonomic</div>
             </div>  
         </div>
-        <div class="box" onmouseover="hover('sing', 'singText')" onmouseout="offHover('sing', 'singText')">
+        <div class="box" onclick="window.open('studyingVocalArtistry');" onmouseover="hover('sing', 'singText')" onmouseout="offHover('sing', 'singText')">
             <img src="images/urinetown.jpg" alt="Dancing actors" id="sing" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
             <div class="photo_text" id="singText" style="left: 15%;">  
                 <div class="text">Studying Vocal Artistry</div>
             </div>  
         </div>
     </div>
-    <div class="gallery">
+    <div class="gallery" style="display: none;">
         <div class="box" onmouseover="hover('cs', 'csText')" onmouseout="offHover('cs', 'csText')">
             <img src="images/cs_classwork.jpg" alt="Girl getting certificate" id="cs" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
             <div class="photo_text" id="csText" style="left: 1%;">  
@@ -62,7 +62,7 @@ My absolute favorite thing to do in my free time is to practice singing, but I a
             </div>  
         </div>
     </div>
-    <div class="gallery">
+    <div class="gallery" style="display: none;">
         <div class="box" onmouseover="hover('hike', 'hikeText')" onmouseout="offHover('hike', 'hikeText')">
             <img src="images/grand_canyon.jpg" alt="Girl in front of Grand Canyon" id="hike" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
             <div class="photo_text" id="hikeText" style="left: 12%;">  
@@ -91,6 +91,10 @@ My absolute favorite thing to do in my free time is to practice singing, but I a
         function offHover(photo, text) {
             document.getElementById(photo).style.opacity = "1";
             document.getElementById(text).style.opacity = "0";
+        }
+        function openPage(suffix) {
+            let link = 'http://www.hilaryoglesby.com/' + suffix + '.html';
+            window.open('http://www.hilaryoglesby.com/theaterAtOxy.html');
         }
   </script>  
   </body>
