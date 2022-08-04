@@ -1,101 +1,59 @@
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <header class="header" style="display: none;">
-        <div style="margin-left: -8px; display: inline-block; width: 70px; height: 56px; background-color: #000035; border-right: 2px solid #ffffff;">
-            <img style="height: 50px; margin-left: 10px; margin-top: 4px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAABlUlEQVR4nO2YQW7CMBREv6seiEo9DEuKukDqASqxQeJ8lbhQybBoogbjOMZxPHbyn8QCg+M3g83CIoqiKAoHAFsAW7YHBQA7AL/ta8f2yQqADwBX/NMAOLC9suAIv54SPOGXXwKAvSP8dWBsz/ZNysAv3wA4+D5jeychJOBiS3gm2OJKiAm0mBKmBKm+hBQBqi0hpXh1JcwhXE0Jc4oWX0IOwWJLyClWXAkMoWJKYIrQS6ALMB1KCE9zKSl8dqcSw2dzg/smByjo1qZ1tJl+szTQLgAgkXsyXI6TdoIvfEUFxJUwFr6yArwlGMeD3kTkR0ReesON9V6MMQ9zh8TCYzgE49exnRsReTfGXPpfugvVLngRkWP/2SLyFWRbFp/yF7rjbIf3AuC7v3Vij8DI1hwldp12rDvKp+Dg1kM3vgVixHIWYGdwEXS+ugXuJkaezbF5udbpePgPWBtaAFuAjRbAFmCjBbAF2GgBbAE2WgBbgI0WwBZgowWwBdi8xk585rJiCnOvs/odoAWwBRRFURRFUVjcAGpWJMkAyVGXAAAAAElFTkSuQmCC">
-        </div>
-        <div class="header-text">Theater</div>
-        <div class="header-text">Computer Science</div>
-        <div class="header-text">More</div>
+    <header class="header">
+      <div class="name-text">Hilary Kang Oglesby</div>
+      <div class="menu_icon">
+        <img src="images/menu_icon.png" style="width: 40px; height: 40px;"/>
+      </div>
+      <div class="nav_bar">
+        <div class="header-text">Home</div>
+        <div class="header-text">Resume</div>
+        <div class="header-text">Gallery</div>
+        <div class="header-text">Announcements</div>
+        <div class="header-text">Videos</div>
+        <div class="header-text">Contact</div>
+      </div>
     </header>
   <body style="margin-top: 0;">
-    <div>
-        <img style="width: 100vw;" src="images/bigPic.png" id="headshot" alt="big picture of a girl">
+    <div style="display: table;">
+        <img class="headshot" src="images/Witch1.jpeg" id="headshot">
+        <img class="center_headshot" src="images/Ingenue1.jpeg" id="headshot">
+        <img class="headshot" src="images/NiceGirl2.jpeg" id="headshot">
     </div>
-    <name class="name">
-      <h1 class="headTitle">Hilary Kang Oglesby</h1>
-      <p class="paragraphs">I am a rising senior at Occidental College, with a double major in Theater and Computer Science and a minor in Mathematics! On top of classes, I participate in the cast and crew of mainstage productions, am a member of the Oxy Glee Club, and study vocal performance. I love that I get to spend my day studying multiple things I am passionate about.
+    <div class="about">
+      <div class="about-bg">
+      <p class="paragraphs">
+        Hilary is a Los Angeles based actor who has been performing from the age of three. Born and raised in the Bay Area, Hilary first fell in love
+        with performing through dance, then going on to act in local musical theater productions and intensely study vocal artistry and acting.
+        As a junior in high school, Hilary was the first person from her theater program to ever place at the Lenaea High School Theater Festival for
+        Musical Theater Performance, where her "Woman" from <i>The Pirate Queen</i> earned her the Silver Award. She graduated Magna Cum Laude from Occidental
+        College in May of 2022 with a major in Theater. At Oxy, Hilary had leading roles in numerous productions and her one-woman show <i>Lyrical Escapism</i>
+         earned her the highest honors for her Theater Major as well as the Jack Bell Award for Outstanding Creative Achievement. She also was a recipient of the
+         Howard Swan Scholarship for Vocal Study through the Music Department at Oxy. Hilary has had principal roles in multiple independent films, one of which
+          has been nominated for the LA Independent Women Film Awards for 2022. She is so excited to be a part
+         of the Los Angeles Theater and Film industries, and hopes to be able to act both on the stage and in front of the camera. Hilary Kang Oglesby is of
+         Korean and Scottish descent.
+      </p>
+      <div class="about_image_large">
+        <img class="about-image" src="images/player1.jpg" id="headshot">
+        <img class="about-image" src="images/drowsy1.jpg" id="headshot">
+      </div>
+    </div>
+      <div class="about_image_small">
+        <img class="about-image" src="images/player1.jpg" id="headshot">
+        <img class="about-image" src="images/drowsy1.jpg" id="headshot">
+      </div>
+    </div>
 
-In addition to being a student, I am entering my third summer as a software engineering intern with Autonomic LLC. My first summer I worked on the User Interface team, and then moved to the Customer Support team.
-
-My absolute favorite thing to do in my free time is to practice singing, but I also love to explore nature through hiking, learn how to cook new recipes, and read. To learn more about me and my adventures, check out the pictures below!</p>
-    </name>
-    <div class="gallery">
-        <div class="box" onClick="openPage('theaterAtOxy')" onmouseover="hover('mob', 'mobText')" onmouseout="offHover('mob', 'mobText')">
-            <img src="images/mob.jpg" id="mob" alt="Girl carrying boat" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
-            <div class="photo_text" id="mobText" style="left: 8%;">  
-                <div class="text">Theater Productions at Oxy</div>
-            </div>  
-        </div>
-        <div class="box" onclick="window.open('interningAtAu');" onmouseover="hover('au', 'auText')" onmouseout="offHover('au', 'auText')">
-            <img src="images/autonomic.jpg" alt="Girl in front of computer" id="au" class="image" style="width: 100%; height: 100%; display: block;  transition: 0.5sease; opacity: 1;">
-            <div class="photo_text" id="auText" style="left: 16%;">  
-                <div class="text">Interning at Autonomic</div>
-            </div>  
-        </div>
-        <div class="box" onclick="window.open('studyingVocalArtistry');" onmouseover="hover('sing', 'singText')" onmouseout="offHover('sing', 'singText')">
-            <img src="images/urinetown.jpg" alt="Dancing actors" id="sing" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
-            <div class="photo_text" id="singText" style="left: 15%;">  
-                <div class="text">Studying Vocal Artistry</div>
-            </div>  
-        </div>
-    </div>
-    <div class="gallery" style="display: none;">
-        <div class="box" onmouseover="hover('cs', 'csText')" onmouseout="offHover('cs', 'csText')">
-            <img src="images/cs_classwork.jpg" alt="Girl getting certificate" id="cs" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
-            <div class="photo_text" id="csText" style="left: 1%;">  
-                <div class="text">As a Computer Science major at Oxy</div>
-            </div>  
-        </div>
-        <div class="box" onmouseover="hover('thea', 'theaText')" onmouseout="offHover('thea', 'theaText')">
-            <img src="images/winters_tale.jpg" alt="Girl in Shakespeare scene" id="thea" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
-            <div class="photo_text" id="theaText" style="left: 10%;">  
-                <div class="text">As a Theater major at Oxy</div>
-            </div>  
-        </div>
-        <div class="box" onmouseover="hover('glee', 'gleeText')" onmouseout="offHover('glee', 'gleeText')">
-            <img src="images/glee_group.jpg" alt="Glee Club Members" id="glee" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
-            <div class="photo_text" id="gleeText" style="left: 0;">  
-                <div class="text">Being in the Occidental Glee Club</div>
-            </div>  
-        </div>
-    </div>
-    <div class="gallery" style="display: none;">
-        <div class="box" onmouseover="hover('hike', 'hikeText')" onmouseout="offHover('hike', 'hikeText')">
-            <img src="images/grand_canyon.jpg" alt="Girl in front of Grand Canyon" id="hike" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
-            <div class="photo_text" id="hikeText" style="left: 12%;">  
-                <div class="text">Hiking and the Outdoors</div>
-            </div>  
-        </div>
-        <div class="box" onmouseover="hover('hs', 'hsText')" onmouseout="offHover('hs', 'hsText')">
-            <img src="images/drowsy.PNG" alt="Girl doing splits" id="hs" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
-            <div class="photo_text" id="hsText" style="left: 14%;">  
-                <div class="text">Theater before college</div>
-            </div>  
-        </div>
-        <div class="box" onmouseover="hover('fun', 'funText')" onmouseout="offHover('fun', 'funText')">
-            <img src="images/my_girls.jpg" alt="3 friends standing" id="fun" class="image" style="width: 100%; height: 100%; display: block; transition: 0.5s ease; opacity: 1;">
-            <div class="photo_text" id="funText" style="left: 27%;">  
-                <div class="text">More about me</div>
-            </div>  
-        </div>
-    </div>
 
   <script>
-        function hover(photo, text) {
-            document.getElementById(photo).style.opacity = "0.3";
-            document.getElementById(text).style.opacity = "1";
-        }
-        function offHover(photo, text) {
-            document.getElementById(photo).style.opacity = "1";
-            document.getElementById(text).style.opacity = "0";
-        }
         function openPage(suffix) {
             let link = 'http://www.hilaryoglesby.com/' + suffix + '.html';
             window.open('http://www.hilaryoglesby.com/theaterAtOxy.html');
         }
-  </script>  
+  </script>
   </body>
 </html>
